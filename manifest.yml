@@ -1,0 +1,11 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 2
+  domain: mybluemix.net
+  name: sess11
+  host: sess11
+  disk_quota: 1024M
+  services:
+  - availability-monitoring-auto
+  - Session Cache-00
